@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png/webp" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png/webp" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hexagon Corp.</title>
+    <title>Hexagon Corp - Products</title>
     <style>
         body {
             font-family: 'Cascadia Code', 'Consolas', 'Courier New', monospace;
@@ -21,11 +17,6 @@
             color: whitesmoke;
             padding: 1em 0;
             text-align: center;
-        }
-        header img {
-            max-width: 100px;
-            display: block;
-            margin: 0 auto 10px;
         }
         nav {
             background-color: #202326;
@@ -46,11 +37,8 @@
             text-decoration: none;
             font-weight: bold;
         }
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
         .hero {
-            background: url('banner-image.jpg') no-repeat center center/cover;
+            background: url('products-banner.jpg') no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 5em 2em;
@@ -58,27 +46,20 @@
         .hero h1 {
             font-size: 2.5em;
         }
-        .hero p {
-            font-size: 1.2em;
-            margin-bottom: 1em;
-        }
-        .hero a {
-            background-color: #ff4500;
-            color: white;
-            padding: 0.8em 1.5em;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-        }
-        .features {
-            display: flex;
-            justify-content: space-around;
+        .product-section {
             padding: 3em 2em;
             background-color: white;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
-        .feature {
+        .product {
             max-width: 300px;
             text-align: center;
+            padding: 1em;
+            background: #eaeaea;
+            margin: 1em;
+            border-radius: 10px;
         }
         .cta {
             text-align: center;
@@ -96,40 +77,39 @@
 </head>
 <body>
     <header>
-        <img src="android-chrome-512x512.png" alt="Hexagon Logo">
-        <h1>Welcome to Hexagon Corporation!</h1>
+        <h1>Hexagon Corp - Our Products</h1>
     </header>
     <nav>
         <ul>
+            <li><a href="index.html">Home</a></li>
             <li><a href="#">Get Help</a></li>
+            <li><a href="products.html">Products</a></li>
             <li><a href="contacts.html">Contact Us</a></li>
-            <li><a href="products.html">More Products</a></li>
             <li><a href="faqs.html">FAQ's</a></li>
         </ul>
     </nav>
     <section class="hero">
-        <h1>Complete Security for Your Business</h1>
-        <p>Hexagon Corp provides cutting-edge security solutions to protect your business from cyber threats.</p>
-        <a href="#">Get Started</a>
+        <h1>Explore Our Cutting-Edge Security Solutions</h1>
+        <p>Comprehensive protection for your business, tailored to meet your security needs.</p>
     </section>
-    <section class="features">
-        <div class="feature">
-            <h2>Advanced Protection</h2>
-            <p>Stay ahead of cyber threats with our intelligent security solutions.</p>
+    <section class="product-section">
+        <div class="product">
+            <h2>Cloud Protection</h2>
+            <p>Secure your cloud applications with our advanced security solutions.</p>
         </div>
-        <div class="feature">
-            <h2>Cloud Security</h2>
-            <p>Secure your data across multiple cloud environments seamlessly.</p>
+        <div class="product">
+            <h2>Endpoint Security</h2>
+            <p>Protect all devices within your network from cyber threats.</p>
         </div>
-        <div class="feature">
-            <h2>24/7 Support</h2>
-            <p>Our dedicated support team is available to assist you at any time.</p>
+        <div class="product">
+            <h2>Network Defense</h2>
+            <p>Prevent cyber attacks and keep your network safe and secure.</p>
         </div>
     </section>
     <section class="cta">
         <h2>Ready to Secure Your Business?</h2>
         <p>Contact us today to learn more about our security solutions.</p>
-        <a href="#">Get a Free Consultation</a>
+        <a href="#" style="background-color:white; color:#ff4500; padding:10px 20px; text-decoration:none; border-radius:5px;">Get a Free Consultation</a>
     </section>
     <footer>
         <p>&copy; 2025 Hexagon Corp. All rights reserved.</p>
