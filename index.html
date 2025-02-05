@@ -16,25 +16,21 @@
             background-color: #f4f4f4;
             color: #333;
         }
-
         header {
             background-color: #242736;
             color: whitesmoke;
             padding: 1em 0;
             text-align: center;
         }
-
         header img {
             max-width: 100px;
             display: block;
             margin: 0 auto 10px;
         }
-
         nav {
             background-color: #202326;
             padding: 0.5em 0;
         }
-
         nav ul {
             list-style: none;
             margin: 0;
@@ -42,27 +38,54 @@
             display: flex;
             justify-content: center;
         }
-
         nav ul li {
             margin: 0 1em;
         }
-
         nav ul li a {
             color: white;
             text-decoration: none;
             font-weight: bold;
         }
-
         nav ul li a:hover {
             text-decoration: underline;
         }
-
-        main {
-            padding: 2em;
-            max-width: 800px;
-            margin: auto;
+        .hero {
+            background: url('banner-image.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 5em 2em;
         }
-
+        .hero h1 {
+            font-size: 2.5em;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+        }
+        .hero a {
+            background-color: #ff4500;
+            color: white;
+            padding: 0.8em 1.5em;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 3em 2em;
+            background-color: white;
+        }
+        .feature {
+            max-width: 300px;
+            text-align: center;
+        }
+        .cta {
+            text-align: center;
+            padding: 3em;
+            background-color: #ff4500;
+            color: white;
+        }
         footer {
             text-align: center;
             padding: 1em 0;
@@ -84,23 +107,30 @@
             <li><a href="faqs.html">FAQ's</a></li>
         </ul>
     </nav>
-    <main>
-        <p>
-            Hexagon Corp is committed to delivering easy-to-understand and innovative solutions for modern businesses. 
-            Our expertise spans multiple industries, providing cutting-edge technology and services tailored to meet the unique 
-            demands of each client. We focus on efficiency, security, and scalability, ensuring that your business stays ahead 
-            in an ever-evolving digital landscape.
-        </p>
-        <p>
-            With a team of dedicated professionals, we strive to bring the best solutions in cloud computing, cybersecurity, and 
-            enterprise software development. Our goal is to empower businesses by simplifying complex challenges, optimizing operations, 
-            and driving growth. We believe in collaboration, innovation, and a commitment to excellence.
-        </p>
-        <p>
-            Stay tuned as we continue to expand our offerings, enhance our support services, and introduce new features that will 
-            help your business thrive. Join us in shaping the future of technology with Hexagon Corp.
-        </p>
-    </main>
+    <section class="hero">
+        <h1>Complete Security for Your Business</h1>
+        <p>Hexagon Corp provides cutting-edge security solutions to protect your business from cyber threats.</p>
+        <a href="#">Get Started</a>
+    </section>
+    <section class="features">
+        <div class="feature">
+            <h2>Advanced Protection</h2>
+            <p>Stay ahead of cyber threats with our intelligent security solutions.</p>
+        </div>
+        <div class="feature">
+            <h2>Cloud Security</h2>
+            <p>Secure your data across multiple cloud environments seamlessly.</p>
+        </div>
+        <div class="feature">
+            <h2>24/7 Support</h2>
+            <p>Our dedicated support team is available to assist you at any time.</p>
+        </div>
+    </section>
+    <section class="cta">
+        <h2>Ready to Secure Your Business?</h2>
+        <p>Contact us today to learn more about our security solutions.</p>
+        <a href="#">Get a Free Consultation</a>
+    </section>
     <footer>
         <p>&copy; 2025 Hexagon Corp. All rights reserved.</p>
     </footer>
